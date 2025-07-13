@@ -10,6 +10,7 @@ import java.util.UUID;
 public class UserDiscount {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(columnDefinition = "varchar(36)")
     private UUID id;
     @ManyToOne
     @JoinColumn(name = "user_id")

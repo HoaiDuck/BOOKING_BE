@@ -13,6 +13,7 @@ import java.util.UUID;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(columnDefinition = "varchar(36)")
     private UUID id;
     private String email;
     private String passwordHash;

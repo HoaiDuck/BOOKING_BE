@@ -10,6 +10,7 @@ import java.util.UUID;
 public class Resort {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(columnDefinition = "varchar(36)")
     private UUID id;
     @ManyToOne
     @JoinColumn(name = "partner_id")

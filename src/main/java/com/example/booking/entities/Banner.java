@@ -10,6 +10,7 @@ import java.util.UUID;
 public class Banner {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(columnDefinition = "varchar(36)")
     private UUID id;
     private String title;
     private String imageUrl;

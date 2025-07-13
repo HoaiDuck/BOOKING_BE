@@ -10,6 +10,7 @@ import java.util.UUID;
 public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(columnDefinition = "varchar(36)")
     private UUID id;
     @JoinColumn(name = "sender_id")
     @ManyToOne
